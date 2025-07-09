@@ -1,33 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- 
-    - primary meta tags
-  -->
-  <title>Asel | Portfolio</title>
-  <meta name="title" content="Asel | Portfolio">
-  <meta name="description" content="This is a personal portfolio html template">
+  <title>아셀 | 포트폴리오</title>
+  <meta name="title" content="아셀 | 포트폴리오">
+  <meta name="description" content="개인 포트폴리오 HTML 템플릿입니다">
 
-  <!-- 
-    - favicon
-  -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <!-- 
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- 
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/require.css">
   <link rel="stylesheet" href="./assets/css/pages/portfolio.css">
 
@@ -35,228 +24,190 @@
 
 <body>
 
-  <!-- 
-    - #PRELOADER
-  -->
+<div class="preloader" data-preloader>
+  <div class="preloader-circle"></div>
+</div>
 
-  <div class="preloader" data-preloader>
-    <div class="preloader-circle"></div>
-  </div>
+<header class="header" data-header>
+  <div class="container">
 
+    <a href="./index.html" class="logo">
+      <img src="./assets/images/logo.png" width="180" height="34" alt="아셀 홈">
+    </a>
 
+    <nav class="navbar" data-navbar>
+      <ul class="navbar-list">
 
-
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-    <div class="container">
-
-      <a href="./index.html" class="logo">
-        <img src="./assets/images/logo.png" width="180" height="34" alt="Asel home">
-      </a>
-
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <a href="./index.html" class="label-lg navbar-link has-after">Home</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="./service.html" class="label-lg navbar-link has-after">Skills</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="label-lg navbar-link has-after active">Portfolio</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="./contact.html" class="label-lg navbar-link has-after">Contact</a>
-          </li>
-
-        </ul>
-      </nav>
-
-      <a href="./contact.html" class="btn btn-primary">Contact Now</a>
-
-      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-      </button>
-
-    </div>
-  </header>
-
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #PORTFOLIO
-      -->
-
-      <section class="section portfolio" aria-labelledby="portfolio-label">
-        <div class="container">
-
-          <h2 class="section-title headline-md text-center" id="portfolio-label">Latest Projects</h2>
-
-          <ul class="portfolio-list">
-
-            <li>
-              <div class="portfolio-card">
-
-                <div class="card-banner img-holder" style="--width: 800; --height: 540;">
-                  <img src="./assets/images/portfolio-1.png" width="800" height="540" loading="lazy"
-                       alt="Django E-commerce Backend Platform" class="img-cover">
-
-                  <a href="https://github.com/asel6320/spare_Asel" class="btn-icon" aria-label="More about Django E-commerce Backend Platform">
-                    <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
-                  </a>
-                </div>
-
-                <div class="card-content">
-                  <span class="chip label-md">Django · PostgreSQL</span>
-                  <h3 class="title-md">Django E-commerce Backend Platform</h3>
-                  <p class="card-text">
-                    A backend-focused, multilingual vehicle parts platform built with Django and PostgreSQL. Includes a secure CRM system, admin analytics panel, dynamic cart & like systems, and multi-language support for users in Central Asia.
-                  </p>
-                  <a href="https://spare-asel-8.onrender.com" class="btn btn-primary">View Website</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="portfolio-card">
-
-                <div class="card-banner img-holder" style="--width: 800; --height: 540;">
-                  <img src="./assets/images/portfolio-2.png" width="800" height="540" loading="lazy"
-                       alt="Personal Finance Tracker" class="img-cover">
-
-                  <a href="https://github.com/asel6320/personal_finance" class="btn-icon" aria-label="More about Personal Finance Tracker">
-                    <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
-                  </a>
-                </div>
-
-                <div class="card-content">
-                  <span class="chip label-md">React · TypeScript</span>
-                  <h3 class="title-md">Personal Finance Tracker</h3>
-                  <p class="card-text">
-                    A simple and intuitive React + TypeScript application for tracking daily expenses. Users can add spending records, assign them to categories, and visualize totals through interactive charts.
-                  </p>
-                  <a href="https://asel6320.github.io/personal_finance/" class="btn btn-primary">View Website</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="portfolio-card">
-
-                <div class="card-banner img-holder" style="--width: 800; --height: 540;">
-                  <img src="./assets/images/portfolio-3.png" width="800" height="540" loading="lazy"
-                       alt="Food Order Game" class="img-cover">
-
-                  <a href="https://github.com/asel6320/food_order" class="btn-icon" aria-label="More about Food Order Game">
-                    <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
-                  </a>
-                </div>
-
-                <div class="card-content">
-                  <span class="chip label-md">React JS</span>
-                  <h3 class="title-md">Food Order Game</h3>
-                  <p class="card-text">
-                    Simple food order game using React JS.
-                  </p>
-                  <a href="https://food-order-6k6n.vercel.app/" class="btn btn-primary">View Website</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="portfolio-card">
-
-                <div class="card-banner img-holder" style="--width: 800; --height: 540;">
-                  <img src="./assets/images/portfolio-4.jpg" width="800" height="540" loading="lazy"
-                       alt="E-Commerce Website for Ordering Food" class="img-cover">
-
-                  <a href="#" class="btn-icon" aria-label="More about E-Commerce Website for Ordering Food">
-                    <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
-                  </a>
-                </div>
-
-                <div class="card-content">
-                  <span class="chip label-md">React JS · Firebase</span>
-                  <h3 class="title-md">E-Commerce Website for Ordering Food</h3>
-                  <p class="card-text">
-                    Website built using React JS and Firebase for the database, allowing users to order food online with a clean interface.
-                  </p>
-                  <a href="#" class="btn btn-primary">View Website</a>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-    <div class="container">
-
-      <ul class="social-list">
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
+        <li class="navbar-item">
+          <a href="./index.html" class="label-lg navbar-link has-after">홈</a>
         </li>
 
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-github"></ion-icon>
-          </a>
+        <li class="navbar-item">
+          <a href="./service.html" class="label-lg navbar-link has-after">기술</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="#" class="label-lg navbar-link has-after active">포트폴리오</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="./contact.html" class="label-lg navbar-link has-after">연락</a>
         </li>
 
       </ul>
+    </nav>
 
-      <p class="text-center">&copy; 2025 copyright by Asel</p>
+    <a href="./contact.html" class="btn btn-primary">지금 연락하기</a>
 
-    </div>
-  </footer>
+    <button class="nav-toggle-btn" aria-label="메뉴" data-nav-toggler>
+      <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+    </button>
 
+  </div>
+</header>
 
+<main>
+  <article>
 
+    <section class="section portfolio" aria-labelledby="portfolio-label">
+      <div class="container">
 
+        <h2 class="section-title headline-md text-center" id="portfolio-label">최근 프로젝트</h2>
 
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+        <ul class="portfolio-list">
 
-  <!-- 
-    - ionicon
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+          <li>
+            <div class="portfolio-card">
+
+              <div class="card-banner img-holder" style="--width: 800; --height: 540;">
+                <img src="./assets/images/portfolio-1.png" width="800" height="540" loading="lazy"
+                     alt="장고 전자상거래 백엔드 플랫폼" class="img-cover">
+
+                <a href="https://github.com/asel6320/spare_Asel" class="btn-icon" aria-label="장고 전자상거래 백엔드 플랫폼 더 보기">
+                  <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+
+              <div class="card-content">
+                <span class="chip label-md">Django · PostgreSQL</span>
+                <h3 class="title-md">장고 전자상거래 백엔드 플랫폼</h3>
+                <p class="card-text">
+                  Django와 PostgreSQL로 개발한 다국어 지원 차량 부품 플랫폼입니다. 보안이 강화된 CRM, 관리자용 분석 패널, 장바구니 및 좋아요 시스템, 중앙아시아 사용자를 위한 다국어 기능을 포함하고 있습니다.
+                </p>
+                <a href="https://spare-asel-8.onrender.com" class="btn btn-primary">웹사이트 보기</a>
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="portfolio-card">
+
+              <div class="card-banner img-holder" style="--width: 800; --height: 540;">
+                <img src="./assets/images/portfolio-2.png" width="800" height="540" loading="lazy"
+                     alt="개인 재정 관리 앱" class="img-cover">
+
+                <a href="https://github.com/asel6320/personal_finance" class="btn-icon" aria-label="개인 재정 관리 앱 더 보기">
+                  <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+
+              <div class="card-content">
+                <span class="chip label-md">React · TypeScript</span>
+                <h3 class="title-md">개인 재정 관리 앱</h3>
+                <p class="card-text">
+                  일일 지출을 추적할 수 있는 React + TypeScript 기반 앱입니다. 사용자는 소비 내역을 카테고리로 분류하고, 차트로 시각화된 통계를 확인할 수 있습니다.
+                </p>
+                <a href="https://asel6320.github.io/personal_finance/" class="btn btn-primary">웹사이트 보기</a>
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="portfolio-card">
+
+              <div class="card-banner img-holder" style="--width: 800; --height: 540;">
+                <img src="./assets/images/portfolio-3.png" width="800" height="540" loading="lazy"
+                     alt="음식 주문 게임" class="img-cover">
+
+                <a href="https://github.com/asel6320/food_order" class="btn-icon" aria-label="음식 주문 게임 더 보기">
+                  <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+
+              <div class="card-content">
+                <span class="chip label-md">React JS</span>
+                <h3 class="title-md">음식 주문 게임</h3>
+                <p class="card-text">
+                  React JS를 사용하여 제작한 간단한 음식 주문 게임입니다.
+                </p>
+                <a href="https://food-order-6k6n.vercel.app/" class="btn btn-primary">웹사이트 보기</a>
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="portfolio-card">
+
+              <div class="card-banner img-holder" style="--width: 800; --height: 540;">
+                <img src="./assets/images/portfolio-4.jpg" width="800" height="540" loading="lazy"
+                     alt="음식 주문 전자상거래 웹사이트" class="img-cover">
+
+                <a href="#" class="btn-icon" aria-label="음식 주문 전자상거래 웹사이트 더 보기">
+                  <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+
+              <div class="card-content">
+                <span class="chip label-md">React JS · Firebase</span>
+                <h3 class="title-md">음식 주문 전자상거래 웹사이트</h3>
+                <p class="card-text">
+                  React JS와 Firebase를 사용해 개발한 음식 주문 웹사이트입니다. 사용자는 깔끔한 UI를 통해 온라인으로 음식을 주문할 수 있습니다.
+                </p>
+                <a href="#" class="btn btn-primary">웹사이트 보기</a>
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="container">
+
+    <ul class="social-list">
+
+      <li>
+        <a href="#" class="social-link">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="social-link">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+      </li>
+
+    </ul>
+
+    <p class="text-center">&copy; 2025 아셀 저작권 보유</p>
+
+  </div>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

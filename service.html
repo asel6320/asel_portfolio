@@ -1,239 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- 
-    - primary meta tags
-  -->
-  <title>Asel | Services</title>
-  <meta name="title" content="Asel | Services">
-  <meta name="description" content="This is a personal portfolio html template">
+  <title>아셀 | 기술</title>
+  <meta name="title" content="아셀 | 기술">
+  <meta name="description" content="개인 포트폴리오 HTML 템플릿">
 
-  <!-- 
-    - favicon
-  -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <!-- 
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- 
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/require.css">
   <link rel="stylesheet" href="./assets/css/pages/service.css">
-
 </head>
 
 <body>
 
-  <!-- 
-    - #PRELOADER
-  -->
+<div class="preloader" data-preloader>
+  <div class="preloader-circle"></div>
+</div>
 
-  <div class="preloader" data-preloader>
-    <div class="preloader-circle"></div>
+<header class="header" data-header>
+  <div class="container">
+    <a href="./index.html" class="logo">
+      <img src="./assets/images/logo.png" width="151" height="28" alt="아셀 홈">
+    </a>
+
+    <nav class="navbar" data-navbar>
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <a href="./index.html" class="label-lg navbar-link has-after">홈</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#" class="label-lg navbar-link has-after active">기술</a>
+        </li>
+        <li class="navbar-item">
+          <a href="./portfolio.html" class="label-lg navbar-link has-after">포트폴리오</a>
+        </li>
+        <li class="navbar-item">
+          <a href="./contact.html" class="label-lg navbar-link has-after">연락</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a href="./contact.html" class="btn btn-primary">지금 연락하기</a>
+
+    <button class="nav-toggle-btn" aria-label="메뉴" data-nav-toggler>
+      <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+    </button>
   </div>
+</header>
 
+<main>
+  <article>
 
+    <section class="section service has-bg-image" aria-labelledby="profile-label"
+             style="background-image: url('./assets/images/service-bg.png')">
+      <div class="container">
 
+        <h2 class="section-title headline-md text-center" id="profile-label">내 기술</h2>
 
+        <ul class="service-list">
 
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-    <div class="container">
-
-      <a href="./index.html" class="logo">
-        <img src="./assets/images/logo.png" width="151" height="28" alt="Asel home">
-      </a>
-
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <a href="./index.html" class="label-lg navbar-link has-after">Home</a>
+          <li class="card-container">
+            <div class="card card-md" style="background-color: hsl(177, 39%, 72%)">
+              <div class="card-media">
+                <ion-icon name="phone-portrait-outline" aria-hidden="true"></ion-icon>
+              </div>
+              <div>
+                <h3 class="card-title title-sm">웹 디자인</h3>
+                <p class="body-sm">현대적이고 보기 좋은 보조적인 웹 디자인 구현</p>
+              </div>
+            </div>
           </li>
 
-          <li class="navbar-item">
-            <a href="#" class="label-lg navbar-link has-after active">Skills</a>
+          <li class="card-container">
+            <div class="card card-md" style="background-color: hsl(41, 99%, 64%)">
+              <div class="card-media">
+                <ion-icon name="code-slash-outline" aria-hidden="true"></ion-icon>
+              </div>
+              <div>
+                <h3 class="card-title title-sm">개발</h3>
+                <p class="body-sm">현대 기술을 이용해 필요한 건축성과 수정성을 가진 웹 앱 개발</p>
+              </div>
+            </div>
           </li>
 
-          <li class="navbar-item">
-            <a href="./portfolio.html" class="label-lg navbar-link has-after">Portfolio</a>
+          <li class="card-container">
+            <div class="card card-md" style="background-color: hsl(19, 97%, 85%)">
+              <div class="card-media">
+                <ion-icon name="laptop-outline" aria-hidden="true"></ion-icon>
+              </div>
+              <div>
+                <h3 class="card-title title-sm">프론트엔드</h3>
+                <p class="body-sm">React 및 현대 JavaScript를 이용해 상황적인 UI 구현</p>
+              </div>
+            </div>
           </li>
 
-          <li class="navbar-item">
-            <a href="./contact.html" class="label-lg navbar-link has-after">Contact</a>
+          <li class="card-container">
+            <div class="card card-md" style="background-color: hsl(221, 100%, 79%)">
+              <div class="card-media">
+                <ion-icon name="server-outline" aria-hidden="true"></ion-icon>
+              </div>
+              <div>
+                <h3 class="card-title title-sm">백엔드</h3>
+                <p class="body-sm">Python 및 Django를 활용한 보안적이고 실험적인 바탕 개발</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="card-container">
+            <div class="card card-md" style="background-color: hsl(76, 39%, 72%)">
+              <div class="card-media">
+                <ion-icon name="color-palette-outline" aria-hidden="true"></ion-icon>
+              </div>
+              <div>
+                <h3 class="card-title title-sm">Figma UI/UX</h3>
+                <p class="body-sm">Figma를 이용해 기회적인 UI 플로타 및 UX 구현</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="card-container">
+            <div class="card card-md" style="background-color: hsl(245, 100%, 90%)">
+              <div class="card-media">
+                <ion-icon name="analytics-outline" aria-hidden="true"></ion-icon>
+              </div>
+              <div>
+                <h3 class="card-title title-sm">데이터 분석</h3>
+                <p class="body-sm">데이터 수집, 분석, , \uC 시공하기 위해 취한 통찰 및 결과 관리</p>
+              </div>
+            </div>
           </li>
 
         </ul>
-      </nav>
 
-      <a href="./contact.html" class="btn btn-primary">Contact Now</a>
+      </div>
+    </section>
 
-      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-      </button>
+  </article>
+</main>
 
-    </div>
-  </header>
+<footer class="footer">
+  <div class="container">
+    <ul class="social-list">
+      <li>
+        <a href="#" class="social-link">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="social-link">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+      </li>
+    </ul>
+    <p class="text-center">&copy; 2025 아셀 저작권 보유</p>
+  </div>
+</footer>
 
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #SERVICE
-      -->
-
-      <section class="section service has-bg-image" aria-labelledby="profile-label"
-               style="background-image: url('./assets/images/service-bg.png')">
-        <div class="container">
-
-          <h2 class="section-title headline-md text-center" id="profile-label">My Profile</h2>
-
-          <ul class="service-list">
-
-            <li class="card-container">
-              <div class="card card-md" style="background-color: hsl(177, 39%, 72%)">
-                <div class="card-media">
-                  <ion-icon name="phone-portrait-outline" aria-hidden="true"></ion-icon>
-                </div>
-                <div>
-                  <h3 class="card-title title-sm">Web Design</h3>
-                  <p class="body-sm">Modern responsive design, visually appealing and user-friendly.</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="card-container">
-              <div class="card card-md" style="background-color: hsl(41, 99%, 64%)">
-                <div class="card-media">
-                  <ion-icon name="code-slash-outline" aria-hidden="true"></ion-icon>
-                </div>
-                <div>
-                  <h3 class="card-title title-sm">Development</h3>
-                  <p class="body-sm">Building scalable and reliable web applications using modern technologies.</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="card-container">
-              <div class="card card-md" style="background-color: hsl(19, 97%, 85%)">
-                <div class="card-media">
-                  <ion-icon name="laptop-outline" aria-hidden="true"></ion-icon>
-                </div>
-                <div>
-                  <h3 class="card-title title-sm">Front End</h3>
-                  <p class="body-sm">Creating interactive, pixel-perfect user interfaces with React & modern JS.</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="card-container">
-              <div class="card card-md" style="background-color: hsl(221, 100%, 79%)">
-                <div class="card-media">
-                  <ion-icon name="server-outline" aria-hidden="true"></ion-icon>
-                </div>
-                <div>
-                  <h3 class="card-title title-sm">Back End</h3>
-                  <p class="body-sm">Building secure, scalable server-side logic with Python and Django.</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="card-container">
-              <div class="card card-md" style="background-color: hsl(76, 39%, 72%)">
-                <div class="card-media">
-                  <ion-icon name="color-palette-outline" aria-hidden="true"></ion-icon>
-                </div>
-                <div>
-                  <h3 class="card-title title-sm">Figma UI/UX</h3>
-                  <p class="body-sm">Designing seamless user experiences and clean interface prototypes in Figma.</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="card-container">
-              <div class="card card-md" style="background-color: hsl(245, 100%, 90%)">
-                <div class="card-media">
-                  <ion-icon name="analytics-outline" aria-hidden="true"></ion-icon>
-                </div>
-                <div>
-                  <h3 class="card-title title-sm">Data Analysis</h3>
-                  <p class="body-sm">Collecting, analyzing and visualizing data to support business decisions.</p>
-                </div>
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-    <div class="container">
-
-      <ul class="social-list">
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-github"></ion-icon>
-          </a>
-        </li>
-
-      </ul>
-
-      <p class="text-center">&copy; 2025 copyright by Asel</p>
-
-    </div>
-  </footer>
-
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./assets/js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
